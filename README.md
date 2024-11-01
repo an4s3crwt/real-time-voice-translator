@@ -42,7 +42,7 @@ Currently, the project supports the following languages for recognition and tran
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your_username/your_repository.git
+   git clone https://github.com/an4s3crwt/real-time-voice-translator.git
    cd your_repository
 2. **Open the HTML file in your browser**:
 index.html
