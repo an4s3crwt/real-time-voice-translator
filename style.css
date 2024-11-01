@@ -1,51 +1,107 @@
-/* styles.css */
-
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-
-h1 {
+    color: #ff69b4;
+    font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
-    color: #007BFF;
+    background: linear-gradient(to bottom right, #fff9f9, #ffe6f1);
+    background-attachment: fixed;
+    padding: 0 15px;
 }
 
-button {
-    background-color: #007BFF; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 10px 15px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
-    font-size: 16px; /* Tamaño de fuente */
-    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+/* Container styling */
+#container {
+    background: #ffffff;
+    border: 3px solid #ffc0cb;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 6px 12px rgba(255, 192, 203, 0.4);
+    animation: float 3s ease-in-out infinite;
+    background-image: url('https://i.pinimg.com/originals/16/e6/7b/16e67b9d69db84f28d9df66d9af80821.png');
+    background-size: 100px;
+    background-position: top right;
+    background-repeat: no-repeat;
 }
 
-button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+/* Header styling */
+h1 {
+    color: #ff69b4;
+    font-size: 34px;
+    text-decoration: dotted underline;
+    margin-bottom: 25px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px #ffc0cb;
 }
 
-label {
-    display: block; /* Hacer que las etiquetas se muestren en bloque */
-    margin-top: 15px; /* Espacio superior */
-    font-weight: bold; /* Negrita para las etiquetas */
+/* Button styling */
+button#recordBtn {
+    background-color: #ffb6c1;
+    color: #ffffff;
+    border: 2px solid #ff69b4;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-family: 'Comic Sans MS', sans-serif;
+    box-shadow: 3px 3px 8px rgba(255, 105, 180, 0.3);
+}
+button#recordBtn:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
 }
 
-select {
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Borde de color gris */
-    font-size: 16px; /* Tamaño de fuente */
-}
-
+/* Recognized and Translated Text Styling */
 #recognizedText, #translatedText {
-    display: block; /* Mostrar como bloque */
-    margin-top: 10px; /* Espacio superior */
-    padding: 10px; /* Espaciado interno */
-    background-color: white; /* Color de fondo blanco */
-    border: 1px solid #ddd; /* Borde gris claro */
-    border-radius: 5px; /* Bordes redondeados */
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px #ffc0cb;
+}
+
+/* Paragraph and label styling */
+p, label {
+    color: #ff69b4;
+    font-size: 18px;
+    margin: 12px 0;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+/* Dropdown styling */
+select {
+    color: #ff69b4;
+    background-color: #ffe6f1;
+    border: 1px solid #ff69b4;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 5px;
+    font-family: 'Comic Sans MS', sans-serif;
+    transition: transform 0.3s;
+}
+select:hover {
+    transform: scale(1.05);
+}
+
+/* Additional custom animations */
+button#recordBtn:hover,
+select:hover,
+#recognizedText:hover,
+#translatedText:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/* Shake animation */
+@keyframes shake {
+    0%, 100% { transform: translate(2px, 2px) rotate(0deg); }
+    25% { transform: translate(-2px, 2px) rotate(0deg); }
+    50% { transform: translate(-2px, -2px) rotate(0deg); }
+    75% { transform: translate(2px, -2px) rotate(0deg); }
+}
+
+/* Float animation for the container */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
 }
