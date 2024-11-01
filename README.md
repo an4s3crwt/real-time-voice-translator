@@ -1,6 +1,6 @@
 # Voice Recognition and Translation Project
 
-This project utilizes the browser's voice recognition API and a translation API to convert speech to text and translate it into another language. The interface is user-friendly and features a "cute" style.
+This project uses the browser's voice recognition API and a translation API to convert speech to text and translate it into another language. The interface is user-friendly and features a "cute" style.
 
 ![Project Demo](assets/voice-translator.gif) 
 
@@ -9,6 +9,7 @@ This project utilizes the browser's voice recognition API and a translation API 
 - **Voice Recognition**: Captures audio and converts it to text.
 - **Translation**: Translates the recognized text into a selected language.
 - **Attractive Interface**: "Cute" visual style enhances the user experience.
+- **Custom Cursor**: A custom cursor adds a unique touch to the interface.
 - **Listening Indicator**: Displays a "Listening..." message while capturing audio.
 
 ## Supported Languages
@@ -23,7 +24,8 @@ Currently, the project supports the following languages for recognition and tran
 ## Future Improvements
 
 - **Add More Languages**: I plan to include support for additional languages in the future, expanding the options available to users.
-- **Improve Recognition Accuracy**: Work on adjustments to enhance voice recognition accuracy across different accents and dialects.
+ **Integrate AI Features**: Explore the integration of AI for contextual understanding and smarter translations that can handle idiomatic expressions and regional dialects.
+- **Custom User Profiles**: Allow users to create profiles that save their language preferences and previous translations for quicker access.
 - **Optimize the Interface**: Continue improving the interface design to make it even more intuitive and appealing.
 
 ## Technologies Used
@@ -49,7 +51,7 @@ index.html
 
 3. **Select the source languag**e (the language you will speak) and the target language (the language you want to translate to).
 
-4. **Click the "Record" button** to start speaking. The recognized text will appear on the screen and be automatically translated.
+4. **Click the "Start" button** to start speaking. The recognized text will appear on the screen and be automatically translated.
 
 5. **Enjoy** real-time translation.
 
