@@ -1,0 +1,51 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+}
+
+button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+label {
+    display: block; /* Hacer que las etiquetas se muestren en bloque */
+    margin-top: 15px; /* Espacio superior */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+select {
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde de color gris */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+#recognizedText, #translatedText {
+    display: block; /* Mostrar como bloque */
+    margin-top: 10px; /* Espacio superior */
+    padding: 10px; /* Espaciado interno */
+    background-color: white; /* Color de fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
