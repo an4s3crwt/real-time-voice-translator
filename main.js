@@ -94,4 +94,17 @@ without blocking the execution of other code. This is particularly useful in web
         utterance.lang = targetLang.value; // Establecer el idioma de la síntesis
         window.speechSynthesis.speak(utterance); // Iniciar la síntesis de voz
     }
+
+
+    recognition.addEventListener("start", () => {
+        document.getElementById("listeningText").style.display = "block";
+    });
+    
+    
+    recognition.addEventListener("end", () => {
+        document.getElementById("listeningText").style.display = "none";
+    });
 });
+
+
+

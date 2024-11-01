@@ -91,6 +91,21 @@ select:hover,
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
+#listeningText {
+    color: #ff69b4;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: pulse 1s infinite;
+}
+
+/* Animación de parpadeo */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
 
 /* Shake animation */
 @keyframes shake {
